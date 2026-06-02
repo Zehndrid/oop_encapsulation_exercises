@@ -8,3 +8,6 @@ class Fan:
         self.__radius = float(radius)
         self.__color = color
         self.__on = on
+
+    def get_speed(self): return self.__speed
+    def set_speed(self, speed): self.__speed = speed
