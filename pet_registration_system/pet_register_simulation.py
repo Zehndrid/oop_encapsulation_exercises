@@ -16,3 +16,8 @@ if __name__ == "__main__":
     user_name = input("Enter name: ")
     user_type = input("Enter type: ")
     user_age = input("Enter age: ") # Forgot int()!
+
+    my_pet = Pet()
+    my_pet.set_name(user_name)
+    my_pet.set_animal_type(user_type)
+    my_pet.set_age(user_age)
