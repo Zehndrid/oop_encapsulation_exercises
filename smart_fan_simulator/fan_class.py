@@ -1,3 +1,4 @@
+import random
 class Fan:
     SLOW = 1
     MEDIUM = 2
@@ -27,3 +28,23 @@ if __name__ == "__main__":
     possible_speeds = [Fan.SLOW, Fan.MEDIUM, Fan.FAST]
     possible_colors = ["red", "blue", "yellow", "green", "purple", "black"]
     possible_states = [True, False]
+
+    print("--- Booting Randomized Smart Fans ---")
+ 
+   # 2. Let the computer randomly pick properties for Fan 1
+    fan1 = Fan(
+        speed=random.choice(possible_speeds),
+        radius=round(random.uniform(5.0, 15.0), 1), # Random decimal between 5 and 15
+        color=random.choice(possible_colors),
+        on=random.choice(possible_states)
+
+    )
+
+    # 3. Let the computer randomly pick completely different properties for Fan 2
+    fan2 = Fan(
+        speed=random.choice(possible_speeds),
+        radius=round(random.uniform(5.0, 15.0), 1),
+        color=random.choice(possible_colors),
+        on=random.choice(possible_states)
+
+    )
