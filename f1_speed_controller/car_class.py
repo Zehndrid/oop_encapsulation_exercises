@@ -9,3 +9,8 @@ class Car:
         self.__speed -= 5
     def get_speed(self):
         return self.__speed
+    
+    if __name__ == "__main__":
+        my_car = Car("2026", "Red Bull Racing RB20")
+        my_car.brake()
+        print(f"Speed after braking: {my_car.get_speed()}") # This will print -5!
