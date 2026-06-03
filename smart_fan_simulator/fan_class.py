@@ -24,8 +24,6 @@ class Fan:
             self.__radius = 5.0 # Fallback to default
 
 if __name__ == "__main__":
-    fan1 =Fan(speed=Fan.FAST, radius=10.0, color="yellow", on=True)
-    fan2 = Fan(speed=Fan.MEDIUM, radius=5.0, color="blue", on=False)
-   
-    print(f"Fan 1 -> Speed: {fan1.get_speed()}, Color: {fan1.get_color()}, On: {fan1.get_on()}")
-    print(f"Fan 2 -> Speed: {fan2.get_speed()}, Color: {fan2.get_color()}, On: {fan2.get_on()}")
+    possible_speeds = [Fan.SLOW, Fan.MEDIUM, Fan.FAST]
+    possible_colors = ["red", "blue", "yellow", "green", "purple", "black"]
+    possible_states = [True, False]
