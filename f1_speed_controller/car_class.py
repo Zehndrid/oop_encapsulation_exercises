@@ -5,7 +5,10 @@ class Car:
         self.__speed = 0
         self.__top_speed = top_speed
     def accelerate(self):
-        self.__speed += 5
+        if self.__speed + 5 <= self.__top_speed:
+            self.__speed += 5
+        else:
+            self.__speed = self.__top_speed
     def brake(self):
         if self.__speed >= 5:
             self.__speed -= 5
