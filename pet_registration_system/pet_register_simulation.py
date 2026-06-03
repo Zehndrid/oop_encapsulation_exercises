@@ -15,7 +15,7 @@ if __name__ == "__main__":
     print("--- Pet Registration ---")
     user_name = input("Enter name: ")
     user_type = input("Enter type: ")
-    user_age = input("Enter age: ")  
+    user_age = int(input("Enter age: "))
 
     my_pet = Pet()
     my_pet.set_name(user_name)
