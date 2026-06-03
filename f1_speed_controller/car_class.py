@@ -23,3 +23,7 @@ class Car:
         for i in range(5):
             my_car.accelerate()
             print(f"Accelerating: {my_car.get_speed()} mph")
+            print("--- Braking Zone ---")
+            for i in range(5):
+                my_car.brake()
+                print(f"Decelerating: {my_car.get_speed()} mph")
