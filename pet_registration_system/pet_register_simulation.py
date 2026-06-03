@@ -13,8 +13,8 @@ class Pet:
 
 if __name__ == "__main__":
     print("--- Pet Registration ---")
-    user_name = input("Enter name: ")
-    user_type = input("Enter type: ")
+    user_name = input("Enter the name of your pet: ").strip()
+    user_type = input("Enter the type of animal: ").strip()
     user_age = int(input("Enter age: "))
 
     my_pet = Pet()
