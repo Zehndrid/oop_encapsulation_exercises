@@ -19,7 +19,7 @@ class Fan:
     def set_radius(self, radius): self.__radius = float(radius)
 
     if __name__ == "__main__":
-        fan1 = Fan()
+        fan1 = Fan(speed=Fan.FAST, radius=10.0, color="yellow", on=True)
     def set_radius(self, radius):
         if radius > 0:
             self.__radius = float(radius)
