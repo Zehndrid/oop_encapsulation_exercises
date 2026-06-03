@@ -26,3 +26,6 @@ class Fan:
             self.__radius = float(radius)
         else:
             self.__radius = 5.0 # Fallback to default
+
+            print(f"Fan 1 -> Speed: {fan1.get_speed()}, Color: {fan1.get_color()}, On: {fan1.get_on()}")
+            print(f"Fan 2 -> Speed: {fan2.get_speed()}, Color: {fan2.get_color()}, On: {fan2.get_on()}")
