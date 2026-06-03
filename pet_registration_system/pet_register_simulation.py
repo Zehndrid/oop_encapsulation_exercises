@@ -21,7 +21,6 @@ if __name__ == "__main__":
             break
         except ValueError:
             print("[!] Please enter a valid number.")
-    user_age = int(input("Enter age: "))
 
     my_pet = Pet()
     my_pet.set_name(user_name)
@@ -30,3 +29,4 @@ if __name__ == "__main__":
 
     print(f"Name: {my_pet.get_name()}")
     print(f"Type: {my_pet.get_animal_type()}")
+    print(f"Age: {my_pet.get_age()}")
