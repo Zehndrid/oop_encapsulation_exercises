@@ -10,3 +10,9 @@ class Pet:
     def get_name(self): return self.__name
     def get_animal_type(self): return self.__animal_type
     def get_age(self): return self.__age
+
+if __name__ == "__main__":
+    print("--- Pet Registration ---")
+    user_name = input("Enter name: ")
+    user_type = input("Enter type: ")
+    user_age = input("Enter age: ") # Forgot int()!
