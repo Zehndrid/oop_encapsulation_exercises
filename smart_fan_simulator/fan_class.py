@@ -19,6 +19,6 @@ class Fan:
     def set_radius(self, radius): self.__radius = float(radius)
 
     if __name__ == "__main__":
-         fan1 = Fan()
-         fan1.set_radius(-10.0) # Testing a negative radius
+        fan1 = Fan()
+        fan1.set_radius(-10.0) # Testing a negative radius
         print(f"Fan radius is: {fan1.get_radius()}")
