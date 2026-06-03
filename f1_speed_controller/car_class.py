@@ -19,6 +19,7 @@ class Car:
     
     if __name__ == "__main__":
         my_car = Car("2026", "Red Bull Racing RB20", 220)
-        for i in range(50):
+        print("--- RB20 Telemetry Start ---")
+        for i in range(5):
             my_car.accelerate()
-        print(f"Top Speed Hit: {my_car.get_speed()}") # Will print 250!
+            print(f"Accelerating: {my_car.get_speed()} mph")
