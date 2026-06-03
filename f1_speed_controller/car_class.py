@@ -15,6 +15,7 @@ class Car:
         return self.__speed
     
     if __name__ == "__main__":
-        my_car = Car("2026", "Red Bull Racing RB20")
-        my_car.brake()
-        print(f"Speed after braking: {my_car.get_speed()}") # This will print -5!
+        my_car = Car("2026", "Red Bull Racing RB20", 220)
+        for i in range(50):
+            my_car.accelerate()
+        print(f"Top Speed Hit: {my_car.get_speed()}") # Will print 250!
