@@ -21,3 +21,6 @@ if __name__ == "__main__":
     my_pet.set_name(user_name)
     my_pet.set_animal_type(user_type)
     my_pet.set_age(user_age)
+
+    print(f"Name: {my_pet.get_nam()}") # Typo!
+    print(f"Type: {my_pet.get_animal_type()}")
