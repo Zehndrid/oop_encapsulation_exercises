@@ -16,8 +16,11 @@ if __name__ == "__main__":
     user_name = input("Enter the name of your pet: ").strip()
     user_type = input("Enter the type of animal: ").strip()
     while True:
-        user_age = int(input("Enter the age of your pet: "))
-        break
+        try:
+            user_age = int(input("Enter the age of your pet: "))
+            break
+        except ValueError:
+            print("[!] Please enter a valid number.")
     user_age = int(input("Enter age: "))
 
     my_pet = Pet()
